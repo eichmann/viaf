@@ -27,6 +27,9 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <viaf:foreachPersonGenderIterator>
+         <tr><td>gender</td><td><viaf:PersonGender /></td></tr>
+      </viaf:foreachPersonGenderIterator>
       <viaf:foreachPersonBirthDateIterator>
          <tr><td>birthDate</td><td><viaf:PersonBirthDate /></td></tr>
       </viaf:foreachPersonBirthDateIterator>
@@ -39,18 +42,15 @@
       <viaf:foreachPersonDeathDateIterator>
          <tr><td>deathDate</td><td><viaf:PersonDeathDate /></td></tr>
       </viaf:foreachPersonDeathDateIterator>
+      <viaf:foreachPersonDifferentFromIterator>
+         <tr><td>differentFrom</td><td><viaf:PersonDifferentFrom /></td></tr>
+      </viaf:foreachPersonDifferentFromIterator>
       <viaf:foreachPersonAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:PersonAlternateName /></td></tr>
       </viaf:foreachPersonAlternateNameIterator>
       <viaf:foreachPersonSameAsIterator>
          <tr><td>sameAs</td><td><a href="<viaf:PersonSameAs />"><viaf:PersonSameAs /></a></td></tr>
       </viaf:foreachPersonSameAsIterator>
-      <viaf:foreachPersonDescriptionIterator>
-         <tr><td>description</td><td><viaf:PersonDescription /></td></tr>
-      </viaf:foreachPersonDescriptionIterator>
-      <viaf:foreachPersonNameIterator>
-         <tr><td>name</td><td><viaf:PersonName /></td></tr>
-      </viaf:foreachPersonNameIterator>
    </table>
 
    <h3>Object Properties</h3>

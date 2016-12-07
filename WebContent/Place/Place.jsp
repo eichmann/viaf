@@ -27,18 +27,15 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
+      <viaf:foreachPlaceDifferentFromIterator>
+         <tr><td>differentFrom</td><td><viaf:PlaceDifferentFrom /></td></tr>
+      </viaf:foreachPlaceDifferentFromIterator>
       <viaf:foreachPlaceAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:PlaceAlternateName /></td></tr>
       </viaf:foreachPlaceAlternateNameIterator>
       <viaf:foreachPlaceSameAsIterator>
          <tr><td>sameAs</td><td><a href="<viaf:PlaceSameAs />"><viaf:PlaceSameAs /></a></td></tr>
       </viaf:foreachPlaceSameAsIterator>
-      <viaf:foreachPlaceDescriptionIterator>
-         <tr><td>description</td><td><viaf:PlaceDescription /></td></tr>
-      </viaf:foreachPlaceDescriptionIterator>
-      <viaf:foreachPlaceNameIterator>
-         <tr><td>name</td><td><viaf:PlaceName /></td></tr>
-      </viaf:foreachPlaceNameIterator>
    </table>
 
    <h3>Object Properties</h3>
