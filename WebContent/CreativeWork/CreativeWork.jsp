@@ -27,15 +27,15 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <viaf:foreachCreativeWorkInLanguageIterator>
-         <tr><td>inLanguage</td><td><viaf:CreativeWorkInLanguage /></td></tr>
-      </viaf:foreachCreativeWorkInLanguageIterator>
+<%--       <viaf:foreachCreativeWorkInLanguageIterator> --%>
+<%--          <tr><td>inLanguage</td><td><viaf:CreativeWorkInLanguage /></td></tr> --%>
+<%--       </viaf:foreachCreativeWorkInLanguageIterator> --%>
       <viaf:foreachCreativeWorkDateCreatedIterator>
          <tr><td>dateCreated</td><td><viaf:CreativeWorkDateCreated /></td></tr>
       </viaf:foreachCreativeWorkDateCreatedIterator>
-      <viaf:foreachCreativeWorkDifferentFromIterator>
-         <tr><td>differentFrom</td><td><viaf:CreativeWorkDifferentFrom /></td></tr>
-      </viaf:foreachCreativeWorkDifferentFromIterator>
+<%--       <viaf:foreachCreativeWorkDifferentFromIterator> --%>
+<%--          <tr><td>differentFrom</td><td><viaf:CreativeWorkDifferentFrom /></td></tr> --%>
+<%--       </viaf:foreachCreativeWorkDifferentFromIterator> --%>
       <viaf:foreachCreativeWorkAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:CreativeWorkAlternateName /></td></tr>
       </viaf:foreachCreativeWorkAlternateNameIterator>

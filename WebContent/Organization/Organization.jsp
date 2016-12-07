@@ -27,12 +27,12 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <viaf:foreachOrganizationLocationIterator>
-         <tr><td>location</td><td><viaf:OrganizationLocation /></td></tr>
-      </viaf:foreachOrganizationLocationIterator>
-      <viaf:foreachOrganizationDifferentFromIterator>
-         <tr><td>differentFrom</td><td><viaf:OrganizationDifferentFrom /></td></tr>
-      </viaf:foreachOrganizationDifferentFromIterator>
+<%--       <viaf:foreachOrganizationLocationIterator> --%>
+<%--          <tr><td>location</td><td><viaf:OrganizationLocation /></td></tr> --%>
+<%--       </viaf:foreachOrganizationLocationIterator> --%>
+<%--       <viaf:foreachOrganizationDifferentFromIterator> --%>
+<%--          <tr><td>differentFrom</td><td><viaf:OrganizationDifferentFrom /></td></tr> --%>
+<%--       </viaf:foreachOrganizationDifferentFromIterator> --%>
       <viaf:foreachOrganizationAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:OrganizationAlternateName /></td></tr>
       </viaf:foreachOrganizationAlternateNameIterator>

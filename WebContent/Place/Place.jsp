@@ -27,9 +27,9 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <viaf:foreachPlaceDifferentFromIterator>
-         <tr><td>differentFrom</td><td><viaf:PlaceDifferentFrom /></td></tr>
-      </viaf:foreachPlaceDifferentFromIterator>
+<%--       <viaf:foreachPlaceDifferentFromIterator> --%>
+<%--          <tr><td>differentFrom</td><td><viaf:PlaceDifferentFrom /></td></tr> --%>
+<%--       </viaf:foreachPlaceDifferentFromIterator> --%>
       <viaf:foreachPlaceAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:PlaceAlternateName /></td></tr>
       </viaf:foreachPlaceAlternateNameIterator>
