@@ -30,6 +30,9 @@
       <viaf:foreachOrganizationAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:OrganizationAlternateName /></td></tr>
       </viaf:foreachOrganizationAlternateNameIterator>
+      <viaf:foreachOrganizationSameAsIterator>
+         <tr><td>sameAs</td><td><a href="<viaf:OrganizationSameAs />"><viaf:OrganizationSameAs /></a></td></tr>
+      </viaf:foreachOrganizationSameAsIterator>
    </table>
 
    <h3>Object Properties</h3>

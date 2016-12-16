@@ -30,6 +30,9 @@
       <viaf:foreachPlaceAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:PlaceAlternateName /></td></tr>
       </viaf:foreachPlaceAlternateNameIterator>
+      <viaf:foreachPlaceSameAsIterator>
+         <tr><td>sameAs</td><td><a href="<viaf:PlaceSameAs />"><viaf:PlaceSameAs /></a></td></tr>
+      </viaf:foreachPlaceSameAsIterator>
    </table>
 
    <h3>Object Properties</h3>

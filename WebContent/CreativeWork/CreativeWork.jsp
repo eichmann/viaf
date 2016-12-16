@@ -36,6 +36,9 @@
       <viaf:foreachCreativeWorkAlternateNameIterator>
          <tr><td>alternateName</td><td><viaf:CreativeWorkAlternateName /></td></tr>
       </viaf:foreachCreativeWorkAlternateNameIterator>
+      <viaf:foreachCreativeWorkSameAsIterator>
+         <tr><td>sameAs</td><td><a href="<viaf:CreativeWorkSameAs />"><viaf:CreativeWorkSameAs /></a></td></tr>
+      </viaf:foreachCreativeWorkSameAsIterator>
    </table>
 
    <h3>Object Properties</h3>
