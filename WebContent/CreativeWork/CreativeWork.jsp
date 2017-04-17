@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>CreativeWork - http://schema.org/CreativeWork</title>
-<style type="text/css" media="all">    @import "/viaf/resources/style.css";</style></head>
+<style type="text/css" media="all">    @import "<util:applicationRoot/>/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altCreativeWork.jsp?uri=${param.uri}">alternate view</a></p>
@@ -27,25 +27,22 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <viaf:foreachCreativeWorkInLanguageIterator>
-         <tr><td>inLanguage</td><td><viaf:CreativeWorkInLanguage /></td></tr>
-      </viaf:foreachCreativeWorkInLanguageIterator>
       <viaf:foreachCreativeWorkDateCreatedIterator>
          <tr><td>dateCreated</td><td><viaf:CreativeWorkDateCreated /></td></tr>
       </viaf:foreachCreativeWorkDateCreatedIterator>
-      <viaf:foreachCreativeWorkAlternateNameIterator>
-         <tr><td>alternateName</td><td><viaf:CreativeWorkAlternateName /></td></tr>
-      </viaf:foreachCreativeWorkAlternateNameIterator>
+      <viaf:foreachCreativeWorkInLanguageIterator>
+         <tr><td>inLanguage</td><td><viaf:CreativeWorkInLanguage /></td></tr>
+      </viaf:foreachCreativeWorkInLanguageIterator>
       <viaf:foreachCreativeWorkSameAsIterator>
          <tr><td>sameAs</td><td><a href="<viaf:CreativeWorkSameAs />"><viaf:CreativeWorkSameAs /></a></td></tr>
       </viaf:foreachCreativeWorkSameAsIterator>
+      <viaf:foreachCreativeWorkAlternateNameIterator>
+         <tr><td>alternateName</td><td><viaf:CreativeWorkAlternateName /></td></tr>
+      </viaf:foreachCreativeWorkAlternateNameIterator>
    </table>
 
    <h3>Object Properties</h3>
    <table>
-      <viaf:foreachCreativeWorkAuthorIterator>
-         <tr><td>author</td><td><a href="../<viaf:CreativeWorkAuthorType/>/<viaf:CreativeWorkAuthorType/>.jsp?uri=<viaf:CreativeWorkAuthor/>"><viaf:CreativeWorkAuthor /></a></td></tr>
-      </viaf:foreachCreativeWorkAuthorIterator>
       <viaf:foreachCreativeWorkWorkExampleIterator>
          <tr><td>workExample</td><td><a href="../<viaf:CreativeWorkWorkExampleType/>/<viaf:CreativeWorkWorkExampleType/>.jsp?uri=<viaf:CreativeWorkWorkExample/>"><viaf:CreativeWorkWorkExample /></a></td></tr>
       </viaf:foreachCreativeWorkWorkExampleIterator>
@@ -55,6 +52,9 @@
       <viaf:foreachCreativeWorkExampleOfWorkIterator>
          <tr><td>exampleOfWork</td><td><a href="../<viaf:CreativeWorkExampleOfWorkType/>/<viaf:CreativeWorkExampleOfWorkType/>.jsp?uri=<viaf:CreativeWorkExampleOfWork/>"><viaf:CreativeWorkExampleOfWork /></a></td></tr>
       </viaf:foreachCreativeWorkExampleOfWorkIterator>
+      <viaf:foreachCreativeWorkAuthorIterator>
+         <tr><td>author</td><td><a href="../<viaf:CreativeWorkAuthorType/>/<viaf:CreativeWorkAuthorType/>.jsp?uri=<viaf:CreativeWorkAuthor/>"><viaf:CreativeWorkAuthor /></a></td></tr>
+      </viaf:foreachCreativeWorkAuthorIterator>
    </table>
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>

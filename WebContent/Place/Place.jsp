@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Place - http://schema.org/Place</title>
-<style type="text/css" media="all">    @import "/viaf/resources/style.css";</style></head>
+<style type="text/css" media="all">    @import "<util:applicationRoot/>/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altPlace.jsp?uri=${param.uri}">alternate view</a></p>
@@ -27,12 +27,12 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <viaf:foreachPlaceAlternateNameIterator>
-         <tr><td>alternateName</td><td><viaf:PlaceAlternateName /></td></tr>
-      </viaf:foreachPlaceAlternateNameIterator>
       <viaf:foreachPlaceSameAsIterator>
          <tr><td>sameAs</td><td><a href="<viaf:PlaceSameAs />"><viaf:PlaceSameAs /></a></td></tr>
       </viaf:foreachPlaceSameAsIterator>
+      <viaf:foreachPlaceAlternateNameIterator>
+         <tr><td>alternateName</td><td><viaf:PlaceAlternateName /></td></tr>
+      </viaf:foreachPlaceAlternateNameIterator>
    </table>
 
    <h3>Object Properties</h3>

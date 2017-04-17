@@ -41,7 +41,7 @@
                             </p>
                             <ol class="bulletedList">
                                 <lucene:searchIterator>
-                                    <li><a href="Work/altWork.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="title" /></a></li>
+                                    <li><a href="CreativeWork/CreativeWork.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="title" /></a></li>
                                 </lucene:searchIterator>
                             </ol>
                         </lucene:search>

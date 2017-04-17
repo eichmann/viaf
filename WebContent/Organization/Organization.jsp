@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Organization - http://schema.org/Organization</title>
-<style type="text/css" media="all">    @import "/viaf/resources/style.css";</style></head>
+<style type="text/css" media="all">    @import "<util:applicationRoot/>/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
    <p><a href="altOrganization.jsp?uri=${param.uri}">alternate view</a></p>
@@ -27,12 +27,12 @@
 
    <h3>Non-Functional Datatype Properties</h3>
    <table>
-      <viaf:foreachOrganizationAlternateNameIterator>
-         <tr><td>alternateName</td><td><viaf:OrganizationAlternateName /></td></tr>
-      </viaf:foreachOrganizationAlternateNameIterator>
       <viaf:foreachOrganizationSameAsIterator>
          <tr><td>sameAs</td><td><a href="<viaf:OrganizationSameAs />"><viaf:OrganizationSameAs /></a></td></tr>
       </viaf:foreachOrganizationSameAsIterator>
+      <viaf:foreachOrganizationAlternateNameIterator>
+         <tr><td>alternateName</td><td><viaf:OrganizationAlternateName /></td></tr>
+      </viaf:foreachOrganizationAlternateNameIterator>
    </table>
 
    <h3>Object Properties</h3>
@@ -41,12 +41,12 @@
 
    <h3>Inverse Object Properties (these do not have declared inverses)</h3>
    <table>
-      <viaf:foreachOrganizationAuthorInverseIterator>
-         <tr><td>author</td><td><a href="../<viaf:OrganizationAuthorInverseType/>/<viaf:OrganizationAuthorInverseType/>.jsp?uri=<viaf:OrganizationAuthorInverse/>"><viaf:OrganizationAuthorInverse/></a></td></tr>
-      </viaf:foreachOrganizationAuthorInverseIterator>
       <viaf:foreachOrganizationCreatorInverseIterator>
          <tr><td>creator</td><td><a href="../<viaf:OrganizationCreatorInverseType/>/<viaf:OrganizationCreatorInverseType/>.jsp?uri=<viaf:OrganizationCreatorInverse/>"><viaf:OrganizationCreatorInverse/></a></td></tr>
       </viaf:foreachOrganizationCreatorInverseIterator>
+      <viaf:foreachOrganizationAuthorInverseIterator>
+         <tr><td>author</td><td><a href="../<viaf:OrganizationAuthorInverseType/>/<viaf:OrganizationAuthorInverseType/>.jsp?uri=<viaf:OrganizationAuthorInverse/>"><viaf:OrganizationAuthorInverse/></a></td></tr>
+      </viaf:foreachOrganizationAuthorInverseIterator>
    </table>
    </viaf:Organization>
 

@@ -73,6 +73,12 @@ body {
 }
 
 
+#logo {
+    height: 100px;
+    float: left;
+    padding: 0px 10px 0px 0px;
+}
+
 
 
 

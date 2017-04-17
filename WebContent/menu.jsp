@@ -3,7 +3,7 @@
 <br>
 <h3><a href="<util:applicationRoot/>/index.jsp">Home</a></h3>
 <ul>
-</ul>
+<li><a href="<util:applicationRoot/>/search.jsp">Search</a></ul>
 <h3>Classes</h3>
 <ul>
 <li><a href="<util:applicationRoot/>/classHierarchy.jsp">Class Hierarchy</a>
