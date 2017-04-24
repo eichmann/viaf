@@ -30,9 +30,10 @@
                     Search Results:
                     <c:out value="${param.query}" />
                 </h3>
+                <c:set var="index"><util:propertyValue name="LuceneIndex"/></c:set>
                 <c:choose>
                     <c:when test="${param.mode == 'work'}">
-                        <lucene:search lucenePath="/Volumes/LD4L/lucene/viaf/work"
+                        <lucene:search lucenePath="${index}/work"
                             label="content" queryParserName="boolean"
                             queryString="${param.query}">
                             <p>
@@ -47,7 +48,7 @@
                         </lucene:search>
                     </c:when>
                     <c:when test="${param.mode == 'person' or empty param.mode}">
-                        <lucene:search lucenePath="/Volumes/LD4L/lucene/viaf/person"
+                        <lucene:search lucenePath="${index}/person"
                             label="content" queryParserName="boolean"
                             queryString="${param.query}">
                             <p>
