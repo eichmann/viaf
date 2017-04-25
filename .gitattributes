@@ -20,6 +20,7 @@ WebContent/Place/PlaceList.jsp -text
 WebContent/WEB-INF/lib/java-cup-0.11a-beta-20060608-runtime.jar -text
 WebContent/classHierarchy.jsp -text
 WebContent/classList.jsp -text
+WebContent/embedded_search.jsp -text
 WebContent/footer.jsp -text
 WebContent/header.jsp -text
 WebContent/images/bullet-l1.gif -text
