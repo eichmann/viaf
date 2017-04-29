@@ -16,11 +16,12 @@
             <form method='POST' action='search.jsp'>
                 <input name="query" value="${param.query}" size=50> <input
                     type=submit name=submitButton value=Search><br>
-                Display results as: <input type="radio" id="1" name="mode"
-                    value="work" <c:if test="${param.mode == 'work'}">checked</c:if>>
-                Work <input type="radio" id="2" name="mode" value="person"
-                    <c:if test="${param.mode == 'person' or empty param.mode}">checked</c:if>>
-                Person <br>
+                Display results as:
+                <input type="radio" id="1" name="mode" value="organization" <c:if test="${param.mode == 'organization'}">checked</c:if>>  Organization
+                <input type="radio" id="2" name="mode" value="person" <c:if test="${param.mode == 'person' or empty param.mode}">checked</c:if>> Person
+                <input type="radio" id="3" name="mode" value="place" <c:if test="${param.mode == 'place'}">checked</c:if>>  Place
+                <input type="radio" id="4" name="mode" value="work" <c:if test="${param.mode == 'work'}">checked</c:if>>  Work
+                <br>
             </form>
             Boolean operators include &amp; (and), | (or) and ! (not).
             Parentheses can be used to group terms.
@@ -43,6 +44,36 @@
                             <ol class="bulletedList">
                                 <lucene:searchIterator>
                                     <li><a href="CreativeWork/CreativeWork.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="title" /></a></li>
+                                </lucene:searchIterator>
+                            </ol>
+                        </lucene:search>
+                    </c:when>
+                    <c:when test="${param.mode == 'organization'}">
+                        <lucene:search lucenePath="${index}/organization"
+                            label="content" queryParserName="boolean"
+                            queryString="${param.query}">
+                            <p>
+                                Result Count:
+                                <lucene:count />
+                            </p>
+                            <ol class="bulletedList">
+                                <lucene:searchIterator>
+                                    <li><a href="Organization/Organization.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="title" /></a></li>
+                                </lucene:searchIterator>
+                            </ol>
+                        </lucene:search>
+                    </c:when>
+                    <c:when test="${param.mode == 'place'}">
+                        <lucene:search lucenePath="${index}/place"
+                            label="content" queryParserName="boolean"
+                            queryString="${param.query}">
+                            <p>
+                                Result Count:
+                                <lucene:count />
+                            </p>
+                            <ol class="bulletedList">
+                                <lucene:searchIterator>
+                                    <li><a href="Place/Place.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="title" /></a></li>
                                 </lucene:searchIterator>
                             </ol>
                         </lucene:search>
