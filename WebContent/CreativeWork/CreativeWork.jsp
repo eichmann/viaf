@@ -44,16 +44,56 @@
    <h3>Object Properties</h3>
    <table>
       <viaf:foreachCreativeWorkWorkExampleIterator>
-         <tr><td>workExample</td><td><a href="../<viaf:CreativeWorkWorkExampleType/>/<viaf:CreativeWorkWorkExampleType/>.jsp?uri=<viaf:CreativeWorkWorkExample/>"><viaf:CreativeWorkWorkExample /></a></td></tr>
+         <tr><td>workExample</td><td>
+            <c:set var="localType"><viaf:CreativeWorkWorkExampleType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<viaf:CreativeWorkWorkExample/>"><viaf:CreativeWorkWorkExample/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<viaf:CreativeWorkWorkExampleType/>/<viaf:CreativeWorkWorkExampleType/>.jsp?uri=<viaf:CreativeWorkWorkExample/>"><viaf:CreativeWorkWorkExample /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </viaf:foreachCreativeWorkWorkExampleIterator>
       <viaf:foreachCreativeWorkCreatorIterator>
-         <tr><td>creator</td><td><a href="../<viaf:CreativeWorkCreatorType/>/<viaf:CreativeWorkCreatorType/>.jsp?uri=<viaf:CreativeWorkCreator/>"><viaf:CreativeWorkCreator /></a></td></tr>
+         <tr><td>creator</td><td>
+            <c:set var="localType"><viaf:CreativeWorkCreatorType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<viaf:CreativeWorkCreator/>"><viaf:CreativeWorkCreator/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<viaf:CreativeWorkCreatorType/>/<viaf:CreativeWorkCreatorType/>.jsp?uri=<viaf:CreativeWorkCreator/>"><viaf:CreativeWorkCreator /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </viaf:foreachCreativeWorkCreatorIterator>
       <viaf:foreachCreativeWorkExampleOfWorkIterator>
-         <tr><td>exampleOfWork</td><td><a href="../<viaf:CreativeWorkExampleOfWorkType/>/<viaf:CreativeWorkExampleOfWorkType/>.jsp?uri=<viaf:CreativeWorkExampleOfWork/>"><viaf:CreativeWorkExampleOfWork /></a></td></tr>
+         <tr><td>exampleOfWork</td><td>
+            <c:set var="localType"><viaf:CreativeWorkExampleOfWorkType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<viaf:CreativeWorkExampleOfWork/>"><viaf:CreativeWorkExampleOfWork/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<viaf:CreativeWorkExampleOfWorkType/>/<viaf:CreativeWorkExampleOfWorkType/>.jsp?uri=<viaf:CreativeWorkExampleOfWork/>"><viaf:CreativeWorkExampleOfWork /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </viaf:foreachCreativeWorkExampleOfWorkIterator>
       <viaf:foreachCreativeWorkAuthorIterator>
-         <tr><td>author</td><td><a href="../<viaf:CreativeWorkAuthorType/>/<viaf:CreativeWorkAuthorType/>.jsp?uri=<viaf:CreativeWorkAuthor/>"><viaf:CreativeWorkAuthor /></a></td></tr>
+         <tr><td>author</td><td>
+            <c:set var="localType"><viaf:CreativeWorkAuthorType/></c:set>
+            <c:choose>
+            <c:when test="${ localType eq 'null'}">
+                  <a href="<viaf:CreativeWorkAuthor/>"><viaf:CreativeWorkAuthor/></a>
+            </c:when>
+            <c:otherwise>
+                  <a href="../<viaf:CreativeWorkAuthorType/>/<viaf:CreativeWorkAuthorType/>.jsp?uri=<viaf:CreativeWorkAuthor/>"><viaf:CreativeWorkAuthor /></a>
+            </c:otherwise>
+            </c:choose>
+         </td></tr>
       </viaf:foreachCreativeWorkAuthorIterator>
    </table>
 
