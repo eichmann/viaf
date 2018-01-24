@@ -23,7 +23,7 @@
                             queryString="${param.query}">
                              <ol class="bulletedList">
                                 <lucene:searchIterator limitCriteria="5" >
-                                    <li><a href="http://guardian.slis.uiowa.edu:8080/viaf/Person/Person.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="name" /></a></li>
+                                    <li><a href="http://guardian.slis.uiowa.edu:8080/viaf/Person/Person.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="name" /></a> <a href="linkPerson.jsp?source=${param.source}&target=<lucene:hit label="uri" />">(link)</a></li>
                                 </lucene:searchIterator>
                             </ol>
                         </lucene:search>
