@@ -9,7 +9,7 @@
 		<lucene:search lucenePath="${index}/work" label="content" queryParserName="boolean" queryString="${param.query}">
 			<ol class="bulletedList">
 				<lucene:searchIterator limitCriteria="5">
-					<li><a href="http://guardian.slis.uiowa.edu:8080/viaf/CreativeWork/CreativeWork.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="title" /></a></li>
+					<li><a href="/viaf/CreativeWork/CreativeWork.jsp?uri=<lucene:hit label="uri" />&mode=${param.mode}"><lucene:hit label="title" /></a> <a href="linkWork.jsp?source=${param.source}&target=<lucene:hit label="uri" />&authority=viaf">(link)</a></li>
 				</lucene:searchIterator>
 			</ol>
 		</lucene:search>
